@@ -6,11 +6,60 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7373B3942EE8C1F900A67EDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7373B3932EE8C1F900A67EDA /* Cocoa.framework */; };
+		7373B39F2EE8C1F900A67EDA /* JelinguaTranslateExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7373B3912EE8C1F900A67EDA /* JelinguaTranslateExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7373B39D2EE8C1F900A67EDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 737EF66F2EE75BEB009D405B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7373B3902EE8C1F900A67EDA;
+			remoteInfo = JelinguaTranslateExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7373B3A42EE8C1F900A67EDA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7373B39F2EE8C1F900A67EDA /* JelinguaTranslateExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7373B3912EE8C1F900A67EDA /* JelinguaTranslateExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JelinguaTranslateExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7373B3932EE8C1F900A67EDA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		737EF6772EE75BEB009D405B /* jelingua-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jelingua-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7373B3A02EE8C1F900A67EDA /* Exceptions for "JelinguaTranslateExtension" folder in "JelinguaTranslateExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7373B3952EE8C1F900A67EDA /* JelinguaTranslateExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7373B3A02EE8C1F900A67EDA /* Exceptions for "JelinguaTranslateExtension" folder in "JelinguaTranslateExtension" target */,
+			);
+			path = JelinguaTranslateExtension;
+			sourceTree = "<group>";
+		};
 		737EF6792EE75BEB009D405B /* jelingua-macos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "jelingua-macos";
@@ -19,6 +68,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7373B38E2EE8C1F900A67EDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7373B3942EE8C1F900A67EDA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		737EF6742EE75BEB009D405B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7373B3922EE8C1F900A67EDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7373B3932EE8C1F900A67EDA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		737EF66E2EE75BEB009D405B = {
 			isa = PBXGroup;
 			children = (
 				737EF6792EE75BEB009D405B /* jelingua-macos */,
+				7373B3952EE8C1F900A67EDA /* JelinguaTranslateExtension */,
+				7373B3922EE8C1F900A67EDA /* Frameworks */,
 				737EF6782EE75BEB009D405B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				737EF6772EE75BEB009D405B /* jelingua-macos.app */,
+				7373B3912EE8C1F900A67EDA /* JelinguaTranslateExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +116,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7373B3A12EE8C1F900A67EDA /* Build configuration list for PBXNativeTarget "JelinguaTranslateExtension" */;
+			buildPhases = (
+				7373B38D2EE8C1F900A67EDA /* Sources */,
+				7373B38E2EE8C1F900A67EDA /* Frameworks */,
+				7373B38F2EE8C1F900A67EDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7373B3952EE8C1F900A67EDA /* JelinguaTranslateExtension */,
+			);
+			name = JelinguaTranslateExtension;
+			packageProductDependencies = (
+			);
+			productName = JelinguaTranslateExtension;
+			productReference = 7373B3912EE8C1F900A67EDA /* JelinguaTranslateExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		737EF6762EE75BEB009D405B /* jelingua-macos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 737EF6822EE75BEB009D405B /* Build configuration list for PBXNativeTarget "jelingua-macos" */;
@@ -55,10 +145,12 @@
 				737EF6732EE75BEB009D405B /* Sources */,
 				737EF6742EE75BEB009D405B /* Frameworks */,
 				737EF6752EE75BEB009D405B /* Resources */,
+				7373B3A42EE8C1F900A67EDA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7373B39E2EE8C1F900A67EDA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				737EF6792EE75BEB009D405B /* jelingua-macos */,
@@ -80,6 +172,9 @@
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					7373B3902EE8C1F900A67EDA = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 					737EF6762EE75BEB009D405B = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
@@ -100,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				737EF6762EE75BEB009D405B /* jelingua-macos */,
+				7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7373B38F2EE8C1F900A67EDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		737EF6752EE75BEB009D405B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +218,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7373B38D2EE8C1F900A67EDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		737EF6732EE75BEB009D405B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +234,73 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7373B39E2EE8C1F900A67EDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */;
+			targetProxy = 7373B39D2EE8C1F900A67EDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		7373B3A22EE8C1F900A67EDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JelinguaTranslateExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JelinguaTranslateExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zrsjero.jelingua-macos.JelinguaTranslateExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7373B3A32EE8C1F900A67EDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JelinguaTranslateExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JelinguaTranslateExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zrsjero.jelingua-macos.JelinguaTranslateExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		737EF6802EE75BEB009D405B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -326,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7373B3A12EE8C1F900A67EDA /* Build configuration list for PBXNativeTarget "JelinguaTranslateExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7373B3A22EE8C1F900A67EDA /* Debug */,
+				7373B3A32EE8C1F900A67EDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		737EF6722EE75BEB009D405B /* Build configuration list for PBXProject "jelingua-macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
