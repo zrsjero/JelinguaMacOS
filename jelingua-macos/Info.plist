@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Базовая мета-информация приложения -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>$(DEVELOPMENT_LANGUAGE)</string>
+
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+
+    <key>CFBundleDisplayName</key>
+    <string>$(PRODUCT_NAME)</string>
+
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Минимальная версия macOS, подтянется из настроек -->
+    <key>LSMinimumSystemVersion</key>
+    <string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+
+    <!-- Главный класс приложения (AppKit) -->
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+
+    <!-- Сервис для контекстного меню / Services -->
+    <key>NSServices</key>
+    <array>
+        <dict>
+            <!-- Как будет называться пункт в меню Services -->
+            <key>NSMenuItem</key>
+            <dict>
+                <key>default</key>
+                <string>Translate with Jelingua</string>
+            </dict>
+
+            <!-- Какой метод в коде вызывать -->
+            <key>NSMessage</key>
+            <string>translateSelection:</string>
+
+            <!-- Имя приложения/порта: лучше всего PRODUCT_NAME -->
+            <key>NSPortName</key>
+            <string>$(PRODUCT_NAME)</string>
+
+            <!-- Какие типы данных сервис принимает -->
+            <key>NSSendTypes</key>
+            <array>
+                <string>public.utf8-plain-text</string>
+                <string>public.plain-text</string>
+                <string>NSStringPboardType</string>
+            </array>
+        </dict>
+    </array>
+</dict>
+</plist>

@@ -2,21 +2,52 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIconFile</key>
-	<string>icon</string>
-	<key>NSExtension</key>
-	<dict>
-		<key>NSExtensionAttributes</key>
-		<dict>
-			<key>NSExtensionActivationRule</key>
-			<dict/>
-			<key>NSExtensionActivationSupportsText</key>
-			<true/>
-		</dict>
-		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.services</string>
-		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).ActionRequestHandler</string>
-	</dict>
+    <!-- Имя, отображаемое в меню Services -->
+    <key>CFBundleDisplayName</key>
+    <string>Translate with Jelingua</string>
+
+    <!-- Имя бандла (может совпадать) -->
+    <key>CFBundleName</key>
+    <string>Translate with Jelingua</string>
+
+    <!-- Идентификатор бандла: берём из настроек таргета -->
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <!-- Версии (минимальные заглушки, иначе Xcode может ругаться позже) -->
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <!-- Тип пакета для app extension -->
+    <key>CFBundlePackageType</key>
+    <string>XPC!</string>
+
+    <!-- Иконка (если есть ресурс "icon") -->
+    <key>CFBundleIconFile</key>
+    <string>icon</string>
+
+    <key>NSExtension</key>
+    <dict>
+        <key>NSExtensionAttributes</key>
+        <dict>
+            <!-- Правильное правило активации: словарь -->
+            <key>NSExtensionActivationRule</key>
+            <dict>
+                <!-- Активировать, когда есть текст -->
+                <key>NSExtensionActivationSupportsText</key>
+                <true/>
+            </dict>
+        </dict>
+
+        <!-- Тип расширения: macOS Services -->
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.services</string>
+
+        <!-- Класс-обработчик -->
+        <key>NSExtensionPrincipalClass</key>
+        <string>$(PRODUCT_MODULE_NAME).ActionRequestHandler</string>
+    </dict>
 </dict>
 </plist>

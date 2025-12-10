@@ -42,13 +42,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7373B3A02EE8C1F900A67EDA /* Exceptions for "JelinguaTranslateExtension" folder in "JelinguaTranslateExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */;
-		};
 		7373B3BA2EE9D21D00A67EDA /* Exceptions for "jelingua-macos" folder in "JelinguaTranslateExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -62,9 +55,6 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7373B3952EE8C1F900A67EDA /* JelinguaTranslateExtension */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7373B3A02EE8C1F900A67EDA /* Exceptions for "JelinguaTranslateExtension" folder in "JelinguaTranslateExtension" target */,
-			);
 			path = JelinguaTranslateExtension;
 			sourceTree = "<group>";
 		};
@@ -262,7 +252,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = JelinguaTranslateExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JelinguaTranslateExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -291,7 +281,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = JelinguaTranslateExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = JelinguaTranslateExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -451,7 +441,8 @@
 				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "jelingua-macos/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -491,7 +482,8 @@
 				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "jelingua-macos/Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
