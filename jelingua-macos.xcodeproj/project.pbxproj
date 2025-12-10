@@ -49,6 +49,14 @@
 			);
 			target = 7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */;
 		};
+		7373B3BA2EE9D21D00A67EDA /* Exceptions for "jelingua-macos" folder in "JelinguaTranslateExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/TranslationModels.swift,
+				Networking/TranslationApiClient.swift,
+			);
+			target = 7373B3902EE8C1F900A67EDA /* JelinguaTranslateExtension */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -62,6 +70,9 @@
 		};
 		737EF6792EE75BEB009D405B /* jelingua-macos */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7373B3BA2EE9D21D00A67EDA /* Exceptions for "jelingua-macos" folder in "JelinguaTranslateExtension" target */,
+			);
 			path = "jelingua-macos";
 			sourceTree = "<group>";
 		};
