@@ -42,29 +42,35 @@
     <key>NSServices</key>
     <array>
         <dict>
-            <!-- Как будет называться пункт в меню Services -->
             <key>NSMenuItem</key>
             <dict>
                 <key>default</key>
                 <string>Translate with Jelingua</string>
             </dict>
 
-            <!-- Какой метод в коде вызывать -->
+            <!-- Имя метода БЕЗ двоеточий: translate(...) -->
             <key>NSMessage</key>
-            <string>translateSelection:</string>
+            <string>translate</string>
 
-            <!-- Имя приложения/порта: лучше всего PRODUCT_NAME -->
+            <!-- Имя приложения / порт; должно совпадать с CFBundleName -->
             <key>NSPortName</key>
-            <string>$(PRODUCT_NAME)</string>
+            <string>jelingua-macos</string>
 
-            <!-- Какие типы данных сервис принимает -->
+            <!-- Типы передаваемых данных -->
             <key>NSSendTypes</key>
             <array>
+                <string>NSStringPboardType</string>
                 <string>public.utf8-plain-text</string>
                 <string>public.plain-text</string>
+            </array>
+
+            <!-- Типы возвращаемых данных (как в примере, даже если мы только показываем alert) -->
+            <key>NSReturnTypes</key>
+            <array>
                 <string>NSStringPboardType</string>
             </array>
         </dict>
     </array>
+
 </dict>
 </plist>

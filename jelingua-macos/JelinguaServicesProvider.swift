@@ -7,24 +7,31 @@
 
 import AppKit
 
-/// Provides macOS Services for Jelingua (Translate with Jelingua).
 final class JelinguaServicesProvider: NSObject {
     
-    /// Service method called from the Services menu.
-    ///
-    /// Signature is important: it must match NSMessage in NSServices ("translateSelection:")
-    @objc func translateSelection(_ pboard: NSPasteboard,
-                                  userData: String,
-                                  error: AutoreleasingUnsafeMutablePointer<NSString?>) {
+    /// Сигнатура 1-в-1 как в живом примере:
+    /// @objc func <NSMessage>(
+    ///   _ pasteboard: NSPasteboard,
+    ///   userData: String?,
+    ///   error: AutoreleasingUnsafeMutablePointer<NSString>
+    /// )
+    @objc func translate(
+        _ pasteboard: NSPasteboard,
+        userData: String?,
+        error: AutoreleasingUnsafeMutablePointer<NSString>
+    ) {
+        NSLog("JelinguaService: translate() called")
         
-        // Try to read a string from the pasteboard
-        guard let text = pboard.string(forType: .string)?
+        guard let text = pasteboard.string(forType: .string)?
             .trimmingCharacters(in: .whitespacesAndNewlines),
               !text.isEmpty else {
+            NSLog("JelinguaService: no valid text on pasteboard")
+            error.pointee = "No text found on pasteboard"
             return
         }
         
-        // Call backend asynchronously
+        NSLog("JelinguaService: got text = \(text)")
+        
         Task {
             let api = TranslationApiClient()
             
@@ -32,6 +39,8 @@ final class JelinguaServicesProvider: NSObject {
                 let response = try await api.translate(text: text)
                 
                 await MainActor.run {
+                    NSLog("JelinguaService: translation OK = \(response.translation)")
+                    
                     let alert = NSAlert()
                     alert.messageText = "Translation"
                     alert.informativeText = """
@@ -45,6 +54,8 @@ final class JelinguaServicesProvider: NSObject {
                 }
             } catch {
                 await MainActor.run {
+                    NSLog("JelinguaService: translation error = \(error)")
+                    
                     let alert = NSAlert()
                     alert.messageText = "Translation error"
                     alert.informativeText = error.localizedDescription
@@ -55,5 +66,3 @@ final class JelinguaServicesProvider: NSObject {
         }
     }
 }
-
-
