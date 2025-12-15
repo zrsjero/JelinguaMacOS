@@ -9,7 +9,7 @@ import SwiftUI
 import AppKit
 
 @main
-struct jelingua_macosApp: App {
+struct JelinguaMacOSApp: App {
     
     @NSApplicationDelegateAdaptor(AppDelegate.self)
     var appDelegate

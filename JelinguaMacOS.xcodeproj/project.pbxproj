@@ -20,13 +20,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		737EF6772EE75BEB009D405B /* jelingua-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jelingua-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		737EF6772EE75BEB009D405B /* JelinguaMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JelinguaMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		737EF6792EE75BEB009D405B /* jelingua-macos */ = {
+		737EF6792EE75BEB009D405B /* JelinguaMacOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "jelingua-macos";
+			path = JelinguaMacOS;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		737EF66E2EE75BEB009D405B = {
 			isa = PBXGroup;
 			children = (
-				737EF6792EE75BEB009D405B /* jelingua-macos */,
+				737EF6792EE75BEB009D405B /* JelinguaMacOS */,
 				737EF6782EE75BEB009D405B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		737EF6782EE75BEB009D405B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				737EF6772EE75BEB009D405B /* jelingua-macos.app */,
+				737EF6772EE75BEB009D405B /* JelinguaMacOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		737EF6762EE75BEB009D405B /* jelingua-macos */ = {
+		737EF6762EE75BEB009D405B /* JelinguaMacOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 737EF6822EE75BEB009D405B /* Build configuration list for PBXNativeTarget "jelingua-macos" */;
+			buildConfigurationList = 737EF6822EE75BEB009D405B /* Build configuration list for PBXNativeTarget "JelinguaMacOS" */;
 			buildPhases = (
 				737EF6732EE75BEB009D405B /* Sources */,
 				737EF6742EE75BEB009D405B /* Frameworks */,
@@ -75,13 +75,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				737EF6792EE75BEB009D405B /* jelingua-macos */,
+				737EF6792EE75BEB009D405B /* JelinguaMacOS */,
 			);
-			name = "jelingua-macos";
+			name = JelinguaMacOS;
 			packageProductDependencies = (
 			);
 			productName = "jelingua-macos";
-			productReference = 737EF6772EE75BEB009D405B /* jelingua-macos.app */;
+			productReference = 737EF6772EE75BEB009D405B /* JelinguaMacOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 737EF6722EE75BEB009D405B /* Build configuration list for PBXProject "jelingua-macos" */;
+			buildConfigurationList = 737EF6722EE75BEB009D405B /* Build configuration list for PBXProject "JelinguaMacOS" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				737EF6762EE75BEB009D405B /* jelingua-macos */,
+				737EF6762EE75BEB009D405B /* JelinguaMacOS */,
 			);
 		};
 /* End PBXProject section */
@@ -279,7 +279,7 @@
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "jelingua-macos/Info.plist";
+				INFOPLIST_FILE = JelinguaMacOS/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -320,7 +320,7 @@
 				ENABLE_RESOURCE_ACCESS_USB = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "jelingua-macos/Info.plist";
+				INFOPLIST_FILE = JelinguaMacOS/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -342,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		737EF6722EE75BEB009D405B /* Build configuration list for PBXProject "jelingua-macos" */ = {
+		737EF6722EE75BEB009D405B /* Build configuration list for PBXProject "JelinguaMacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				737EF6802EE75BEB009D405B /* Debug */,
@@ -351,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		737EF6822EE75BEB009D405B /* Build configuration list for PBXNativeTarget "jelingua-macos" */ = {
+		737EF6822EE75BEB009D405B /* Build configuration list for PBXNativeTarget "JelinguaMacOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				737EF6832EE75BEB009D405B /* Debug */,
